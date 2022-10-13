@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+:root{
+    --primary : pink;
+    --secondary : black;
+    --text : white;   
+}
+body{
+    background-color: black;
+}
+#header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.736) 72%,rgba(203, 84, 104, 0.982));
+    height: 100vh;
+}
+.texthead{
+    text-shadow: 3px 3px black;
+    color: var(--text);
+    font-weight: bold;
+}
+.button{
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    height: 7.5vh;
+    color: white;
+    font-weight: 500;
+    box-shadow: 2px 2px white;
+    transition: 0.35s ease-in;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px black;
+    transition: 1.55 ease-in-out;
+    
+}
+#content{
+    display: none;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    color: pink;
+    text-shadow: 2px 2px black;
+    box-shadow:  2px 2px  black;
+}
+.img{
+    filter: grayscale(100);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      width: 100%;
+    }
+    .album{
+        width: 100%;
+    }
+  }
